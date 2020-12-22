@@ -12,7 +12,7 @@ import json
 DATASET_PATH = '/home/jafar/Downloads/data'
 FILE_JSON = DATASET_PATH + '/train.jsonl'
 
-base_model = tf.keras.applications.EfficientNetB1(input_shape=(224, 224, 3), include_top=False)
+base_model = tf.keras.applications.MobileNetV2(input_shape=(224, 224, 3), include_top=False)
 
 base_model.trainable = False
 
@@ -61,7 +61,7 @@ def predeploy(file_json):
         if cnt % 50 == 0:
             print(cnt)
     images = images.reshape(8500, 7 * 7 * 1280)
-    np.save('extracted_features', images)
+    np.save('extracted_features1', images)
 
 
 def read_image(path):
