@@ -1,4 +1,4 @@
-API_TOKEN = '1430435833:AAFfs_KjpTy9M9VOqZL6IMa6awrGyGGyOgg'
+API_TOKEN = '*********:AAFfs_KjpTy9M9VOqZL6IM*********yOgg'
 
 from telegram.ext import Updater, CommandHandler
 
