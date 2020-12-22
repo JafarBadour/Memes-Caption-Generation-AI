@@ -60,6 +60,8 @@ class KNNRandomGenerator:
         im = cv2.resize(im, dsize=(1000, 1000), interpolation=cv2.INTER_AREA)
         X, Y = 1000, 1000
         words = text.split(' ')
+        words = words[:14]
+
         words.append('')
         for cnt, c in enumerate(words[:-1]):
 
