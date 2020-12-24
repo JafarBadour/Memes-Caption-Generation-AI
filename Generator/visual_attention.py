@@ -362,6 +362,7 @@ class VisualAttentionGenerator:
         plt.tight_layout()
         # plt.show()
         fig.savefig(f'../generated/attention_plot{r}.png')
+        del fig
         return f'../generated/attention_plot{r}.png'
 
 
